@@ -8,7 +8,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -27,12 +27,20 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import SplashScreen from 'react-native-splash-screen';
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
+  // hide spalash screen after app loads
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
+      {/* <StatusBar backgroundColor={"#fff"}/> */}
       <Text
         style={[
           styles.sectionTitle,

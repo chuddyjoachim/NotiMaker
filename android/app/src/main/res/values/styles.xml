@@ -3,6 +3,15 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
+        <!-- <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">#003098</item> -->
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- <item name="android:statusBarColor">@android:color/white</item> -->
+        <item name="android:statusBarColor">#003098</item>
+        <!-- <item name="android:windowLightStatusBar">true</item> -->
+        <!-- <item name="android:background">@drawable/background_splash</item> -->
+        <!-- <item name="colorPrimaryDark">@android:color/white</item> -->
     </style>
 
 </resources>
